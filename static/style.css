@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: left; /* Align text to the left */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Align content to the top */
+    min-height: 100vh;
+    background-color: #78B3CE; /* Subtle background color */
+}
+
+.container {
+    text-align: left; /* Align text to the left */
+    max-width: 1000px; /* Optional: Limit content width */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for focus */
+    background: #CAF4FF; /* background for clarity */
+    border-radius: 10px; /* Rounded corners */
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    margin: 20px 0;
+    display: block;
+}
+
+strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.chart-description {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.chart-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Optional: Styling for charts, you can add borders or specific styles */
+.chart-container img {
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+
+}

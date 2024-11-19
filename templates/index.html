@@ -1,19 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Data Charts</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
-    </div>
-</body>
+    <div class="container">
+        <h1>Player Data Charts</h1>
 
+        <h2>Number of Players per Country</h2>
+        <p>This bar chart illustrates the number of basketball players from various countries. The <strong>USA dominates</strong>, with over 60 players represented, indicating its strong contribution to the basketball talent pool. Other countries like <strong>Greece, Croatia, and Serbia</strong> have significantly fewer players, reflecting their smaller presence in the dataset. This distribution highlights the USA's prominence in basketball development and international representation.</p>
+        <div class="chart-container">
+            <img src="/static/players_per_country_chart.png" alt="Bar Chart">
+        </div>
+
+        <h2>Weight vs Height of Players (Sorted)</h2>
+        <p>This scatter plot shows the relationship between players' heights (in inches) and weights (in pounds), sorted by height. The trend indicates that as height increases, weight generally follows a proportional increase. Players around 70 inches (5 feet 10 inches) typically weigh under 200 lbs, while taller players exceeding 84 inches (7 feet) weigh upwards of 250 lbs. The data reflects the physical build of basketball players, where greater height usually corresponds to higher weight due to the athletic and muscular requirements of the sport.</p>
+        <div class="chart-container">
+            <img src="/static/weight_vs_height_sorted_chart.png" alt="Scatter Plot">
+        </div>
+
+        <h2>Height Distribution of Players</h2>
+        <p>This chart displays the distribution of players' heights measured in inches. The tallest bar, around 76 inches (6 feet 4 inches), represents the most frequent height range. This trend reflects how most players fall within this height range, with fewer players taller than 84 inches (7 feet), making them outliers. The chart provides an overview of the physical characteristics common among players.</p>
+        <div class="chart-container">
+            <img src="/static/height_distribution_chart.png" alt="Height Distribution">
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
 </html>
